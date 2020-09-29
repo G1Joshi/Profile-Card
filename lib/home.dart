@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile/main.dart';
+import 'package:profile_card/main.dart';
 
 class MyHome extends StatefulWidget {
   @override

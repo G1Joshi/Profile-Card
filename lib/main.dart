@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile/home.dart';
+import 'package:profile_card/home.dart';
 
 void main() => runApp(MyApp());
 
