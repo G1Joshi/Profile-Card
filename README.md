@@ -1,3 +1,3 @@
-# profile_card
+# Profile Card
 
-A new Flutter project.
+A Flutter Project
