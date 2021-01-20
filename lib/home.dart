@@ -121,7 +121,7 @@ class _MyHomeState extends State<MyHome> {
                   child: Text(
                     "Submit",
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 16.0,
                     ),
                   ),
                 ),

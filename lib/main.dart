@@ -30,10 +30,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List data = [];
-  String name = 'Jeevan Joshi';
-  String phone = '6397310191';
-  String email = 'joshijeevan27@gmail.com';
-  String address = 'Nainital';
+  String name = 'John Doe';
+  String phone = '9876543210';
+  String email = 'johndoe@gmail.com';
+  String address = 'California';
   @override
   Widget build(BuildContext context) {
     data = ModalRoute.of(context).settings.arguments;
@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.grey[400],
                 ),
                 Text(
-                  '$address',
+                  ' $address',
                   style: TextStyle(
                     color: Colors.grey[400],
                     fontSize: 15.0,
