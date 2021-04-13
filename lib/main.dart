@@ -29,18 +29,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List data = [];
+  List? data = [];
   String name = 'John Doe';
   String phone = '9876543210';
   String email = 'johndoe@gmail.com';
   String address = 'California';
   @override
   Widget build(BuildContext context) {
-    data = ModalRoute.of(context).settings.arguments;
-    name = data == null ? '$name' : data[0];
-    phone = data == null ? '$phone' : data[1];
-    email = data == null ? '$email' : data[2];
-    address = data == null ? '$address' : data[3];
+    data = ModalRoute.of(context)!.settings.arguments as List<dynamic>?;
+    name = data == null ? '$name' : data![0];
+    phone = data == null ? '$phone' : data![1];
+    email = data == null ? '$email' : data![2];
+    address = data == null ? '$address' : data![3];
     return Scaffold(
       appBar: AppBar(
         title: Text('My Profile'),

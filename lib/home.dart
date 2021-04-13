@@ -7,18 +7,18 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
-  List data = [];
+  List? data = [];
   final nameController = TextEditingController();
   final phoneController = TextEditingController();
   final emailController = TextEditingController();
   final addressController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    data = ModalRoute.of(context).settings.arguments;
-    nameController.text = data[0];
-    phoneController.text = data[1];
-    emailController.text = data[2];
-    addressController.text = data[3];
+    data = ModalRoute.of(context)!.settings.arguments as List<dynamic>?;
+    nameController.text = data![0];
+    phoneController.text = data![1];
+    emailController.text = data![2];
+    addressController.text = data![3];
     return Scaffold(
       appBar: AppBar(
         title: Text('Edit Profile'),
@@ -83,10 +83,10 @@ class _MyHomeState extends State<MyHome> {
                       context,
                       '/main',
                       arguments: [
-                        data[0],
-                        data[1],
-                        data[2],
-                        data[3],
+                        data![0],
+                        data![1],
+                        data![2],
+                        data![3],
                       ],
                     );
                   },
